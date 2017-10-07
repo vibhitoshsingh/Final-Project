@@ -1,0 +1,29 @@
+<h3>Edit User</h3>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  
+  <div class="form-group">
+    <label >
+      <img class="img-responsive img-circle" [src]="imageName" width="200" height="200">
+    </label>
+</div>
+  <div class="form-group">
+      <label class="center-block">
+        <input type="text" class="form-control" formControlName="id" placeholder="User Id" disabled="disabled">
+      </label>
+  </div>
+  <div class="form-group">
+      <label class="center-block">
+        <input type="text" class="form-control" formControlName="first_name" placeholder="First Name">
+      </label>
+  </div>
+  <div class="form-group">
+      <label class="center-block">
+        <input type="email" class="form-control" formControlName="last_name" placeholder="Last Name">
+      </label>
+  </div>
+  <div>
+          <button type="submit"  class="btn btn-success">Save</button>
+        </div>
+</form>
+<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>

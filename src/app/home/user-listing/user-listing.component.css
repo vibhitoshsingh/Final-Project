@@ -1,0 +1,17 @@
+img {
+    width:70px;
+    height:70px;
+}
+
+.dis {
+    cursor: not-allowed;
+    filter: alpha(opacity=65);
+    box-shadow: none; 
+    opacity: .65;
+}
+
+#serDiv {
+ margin: 0 auto;
+    width: 200px;
+}
+
